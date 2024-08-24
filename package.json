@@ -9,7 +9,8 @@
     "lint": "next lint --cache",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "export": "next export"
   },
   "dependencies": {
     "@next/third-parties": "^14.1.0",
