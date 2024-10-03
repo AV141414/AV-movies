@@ -1,9 +1,9 @@
-import { Icons } from "@/components/icons";
-import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
-import { siteConfig } from "@/configs/site";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { Icons } from '@/components/icons';
+import { Badge } from '@/components/ui/badge';
+import { buttonVariants } from '@/components/ui/button';
+import { siteConfig } from '@/configs/site';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Index() {
   return (
@@ -11,14 +11,12 @@ export default function Index() {
       <section
         id="hero"
         aria-labelledby="hero-heading"
-        className="container mx-auto flex flex-col items-center justify-center gap-4 pb-8 pt-28 text-center md:pb-12 lg:py-32"
-      >
+        className="container mx-auto flex flex-col items-center justify-center gap-4 pb-8 pt-28 text-center md:pb-12 lg:py-32">
         <Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer">
           <Badge
             aria-hidden="true"
             className="rounded-md px-3.5 py-1.5"
-            variant="secondary"
-          >
+            variant="secondary">
             <Icons.twitter className="mr-2 h-3.5 w-3.5" />
             Follow along on Twitter
           </Badge>
@@ -30,11 +28,11 @@ export default function Index() {
           {/* An e-commerce skateshop built with everything new in Next.js 13 */}
         </h1>
         <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Step into a world where entertainment knows no boundaries, where your
-          screens come alive with an endless array of captivating stories.
+          Your imagination should not be locked up behind a paywall. Join
+          Aetherverse today and step into the world of captivating stories.
         </p>
         <div className="space-x-4">
-          <Link className={`${buttonVariants({ size: "lg" })}`} href="/home">
+          <Link className={`${buttonVariants({ size: 'lg' })}`} href="/home">
             Watch Now <ArrowRight className="ml-1 inline-block" />
           </Link>
           {/* <Link className={`${buttonVariants({ size: "lg", variant: "outline" })}`} href={siteConfig.links.github} target="_blank" */}
@@ -43,8 +41,7 @@ export default function Index() {
       </section>
       <section
         id="features"
-        className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
-      >
+        className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
             Features
@@ -61,10 +58,10 @@ export default function Index() {
                 <path d="M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z" />
               </svg>
               <div className="space-y-2">
-                <h3 className="font-bold">Vast Movie Library</h3>
+                <h3 className="font-bold">Wide-range Of Content</h3>
                 <p className="text-sm text-muted-foreground">
-                  Thousands of movies, spanning diverse genres, languages, and
-                  decades.
+                  Tens of thousands of TV Shows and movies, no matter the genre,
+                  language, or time. The forever treasure.
                 </p>
               </div>
             </div>
@@ -77,7 +74,7 @@ export default function Index() {
               <div className="space-y-2">
                 <h3 className="font-bold">Personalized Recommendations</h3>
                 <p className="text-sm text-muted-foreground">
-                  Suggesting movies and shows tailored to your taste.
+                  Suggesting movies and shows that matches with your perference.
                 </p>
               </div>
             </div>
@@ -117,8 +114,7 @@ export default function Index() {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1"
-                className="h-12 w-12 fill-current"
-              >
+                className="h-12 w-12 fill-current">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
               <div className="space-y-2">
@@ -139,6 +135,7 @@ export default function Index() {
                 <h3 className="font-bold">Free</h3>
                 <p className="text-sm text-muted-foreground">
                   Everything is free, no subscription or credit card required.
+                  What's not to love?
                 </p>
               </div>
             </div>
